@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environnement virtuel
+venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Données
+data/raw/
+data/processed/
+data/augmented/
+
+# Modèles entraînés
+*.pth
+*.pt
+*.ckpt
+
+# Résultats lourds
+results/models/
+results/predictions/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
