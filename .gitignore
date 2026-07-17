@@ -1,33 +1,96 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
+# ============================================================
+# Confidential data — NEVER commit
+# ============================================================
 
-# Environnement virtuel
-venv/
-.env/
+# Image data (proprietary MTQ dataset)
+data/
+dataset/
+*.JPEG
+*.JPG
+*.jpeg
+*.jpg
+!figures/*.png
+!figures/*.jpg
+!docs/*.png
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Données
-data/raw/
-data/processed/
-data/augmented/
-
-# Modèles entraînés
-*.pth
+# Trained models (heavy + proprietary)
 *.pt
+*.pth
 *.ckpt
+*.onnx
+*.h5
+models/
+checkpoints/
 
-# Résultats lourds
+# Credentials
+credentials.json
+kaggle.json
+.kaggle/
+.env
+*.pem
+*.key
+
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+
+build/
+dist/
+*.egg-info/
+
+# ============================================================
+# Virtual environments
+# ============================================================
+
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# ============================================================
+# IDEs and editors
+# ============================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================================
+# Operating systems
+# ============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# Logs and temporary outputs
+# ============================================================
+
+*.log
+outputs/
+runs/
+wandb/
+mlruns/
 results/models/
 results/predictions/
 
-# VS Code
-.vscode/
+# ============================================================
+# Office temporary files
+# ============================================================
 
-# OS
-.DS_Store
-Thumbs.db
-
+~$*.docx
+~$*.doc
+~$*.xlsx
